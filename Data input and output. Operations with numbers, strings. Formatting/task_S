@@ -1,0 +1,19 @@
+name = str(input())
+price = int(input())
+ves = int(input())
+den = int(input())
+price_itog = f"{ves}кг * {price}руб/кг"
+itog = ves * price
+sdacha = den - itog
+len1 = len(name)
+len2 = len(price_itog)
+len3 = len(f"{itog}руб")
+len4 = len(f"{den}руб")
+len5 = len(f"{sdacha}руб")
+print(f"================Чек================") 
+print('Товар:'.ljust(34 - len1), name)
+print('Цена:'.ljust(34 - len2), price_itog)
+print('Итого:'.ljust(35 - len3), itog, "руб", sep='')
+print('Внесено:'.ljust(35 - len4), den, "руб", sep='')
+print('Сдача:'.ljust(35 - len5), sdacha, "руб", sep='')
+print(f"===================================")

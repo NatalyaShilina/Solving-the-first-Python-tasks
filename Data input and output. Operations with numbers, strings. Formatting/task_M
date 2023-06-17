@@ -1,0 +1,5 @@
+chieldren = int(input())
+candies = int(input())
+vidano_konfet = int(candies / chieldren)
+print(int(vidano_konfet))
+print(int(candies - int(vidano_konfet * chieldren)))

@@ -1,0 +1,12 @@
+number1 = int(input("введите 3 значное число "))
+number2 = int(input("введите 3 значное число "))
+chislo1 = number1 // 100
+chislo2 = number1 // 10 % 10
+chislo3 = number1 % 10
+chislo12 = number2 // 100
+chislo22 = number2 // 10 % 10
+chislo32 = number2 % 10
+vivod1 = (chislo1 + chislo12) % 10
+vivod2 = (chislo2 + chislo22) % 10
+vivod3 = (chislo3 + chislo32) % 10
+print(f"{vivod1}{vivod2}{vivod3}")

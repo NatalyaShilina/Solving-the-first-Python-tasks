@@ -1,0 +1,14 @@
+number1 = int(input())
+number2 = int(input())
+number3 = int(input())
+chasov = int(number3 / 60)
+minyt = round(((number3 / 60) - chasov) * 60)
+chasov_itog = chasov + number1
+minyt1 = number2 + minyt
+minyt2 = int(minyt1 / 60)
+minyt_itog = number2 + minyt - minyt2 * 60
+pervay_chas = chasov_itog // 10
+vtoray_chas = chasov_itog % 10
+pervay_chas_minyt_itog = minyt_itog // 10
+vtoray_chas_minyt_itog = minyt_itog % 10
+print(f"{pervay_chas}{vtoray_chas}:{pervay_chas_minyt_itog}{vtoray_chas_minyt_itog}")

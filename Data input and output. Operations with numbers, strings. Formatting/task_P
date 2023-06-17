@@ -1,0 +1,5 @@
+r_a = int(input())
+r_b = int(input())
+speed = int(input())
+itog = (r_b - r_a) / speed
+print("{:.2f}".format(round(itog, 2)))

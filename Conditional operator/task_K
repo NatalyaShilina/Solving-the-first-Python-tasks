@@ -1,0 +1,9 @@
+number = input()
+sort = sorted(number)
+min_cifra = int(sort[0])
+sr = int(sort[1])
+max_cifra = int(sort[2]) 
+if (min_cifra + max_cifra) > (2 * sr):
+    print("YES")
+else:
+    print("NO")

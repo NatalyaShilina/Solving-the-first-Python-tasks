@@ -1,0 +1,30 @@
+speed_P = int(input())
+speed_V = int(input())
+speed_T = int(input())
+if max(speed_P, speed_V, speed_T) == speed_P:
+    first = "1. Петя"
+elif max(speed_P, speed_V, speed_T) == speed_V:
+    first = "1. Вася"
+else:
+    first = "1. Толя"
+if min(speed_P, speed_V, speed_T) == speed_P:
+    third = "3. Петя"
+elif min(speed_P, speed_V, speed_T) == speed_V:
+    third = "3. Вася"
+else:
+    third = "3. Толя"
+if first == "1. Петя" and third == "3. Вася":
+    second = "2. Толя"
+elif first == "1. Петя" and third == "3. Толя":
+    second = "2. Вася"
+elif first == "1. Вася" and third == "3. Толя":
+    second = "2. Петя"
+elif first == "1. Вася" and third == "3. Петя":
+    second = "2. Толя"
+elif first == "1. Толя" and third == "3. Вася":
+    second = "2. Петя"
+elif first == "1. Толя" and third == "3. Петя":
+    second = "2. Вася" 
+print(first)
+print(second)
+print(third)

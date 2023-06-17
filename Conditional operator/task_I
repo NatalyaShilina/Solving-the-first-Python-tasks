@@ -1,0 +1,9 @@
+name1 = input()
+name2 = input()
+name3 = input()
+if min(name1, name2, name3) == name1:
+    print(name1)
+elif min(name1, name2, name3) == name2:
+    print(name2)
+elif min(name1, name2, name3) == name3:
+    print(name3)

@@ -1,0 +1,6 @@
+number1 = input()
+number2 = input()
+sort = sorted(number1 + number2)
+sort1 = int(sort[1])
+sort2 = int(sort[2])
+print(sort[3] + str((sort1 + sort2) % 10) + sort[0])

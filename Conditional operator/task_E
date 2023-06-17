@@ -1,0 +1,7 @@
+number_N = int(input())
+number_M = int(input())
+pet = 6 + number_N
+vasa = 9 + number_M
+if pet > vasa:
+    print("Петя")
+else: print("Вася")

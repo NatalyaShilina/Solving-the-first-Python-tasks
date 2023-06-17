@@ -1,0 +1,16 @@
+speed_P = int(input())
+speed_V = int(input())
+speed_T = int(input())
+if (max(speed_P, speed_V, speed_T) == speed_P) and (min(speed_P, speed_V, speed_T) == speed_T):
+    print(10 * " " + "Петя" + 10 * " " + "\n" + "  Вася  " + "\n" + 18 * " " + "Толя  ")
+elif (max(speed_P, speed_V, speed_T) == speed_P) and (min(speed_P, speed_V, speed_T) == speed_V):
+    print(10 * " " + "Петя" + 10 * " " + "\n" + "  Толя  " + "\n" + 18 * " " + "Вася  ")    
+elif (max(speed_P, speed_V, speed_T) == speed_V) and (min(speed_P, speed_V, speed_T) == speed_T):
+    print(10 * " " + "Вася" + 10 * " " + "\n" + "  Петя  " + "\n" + 18 * " " + "Толя  ")
+elif (max(speed_P, speed_V, speed_T) == speed_V) and (min(speed_P, speed_V, speed_T) == speed_P):
+    print(10 * " " + "Вася" + 10 * " " + "\n" + "  Толя  " + "\n" + 18 * " " + "Петя  ")
+elif (max(speed_P, speed_V, speed_T) == speed_T) and (min(speed_P, speed_V, speed_T) == speed_P):
+    print(10 * " " + "Толя" + 10 * " " + "\n" + "  Вася  " + "\n" + 18 * " " + "Петя  ")
+elif (max(speed_P, speed_V, speed_T) == speed_T) and (min(speed_P, speed_V, speed_T) == speed_V):
+    print(10 * " " + "Толя" + 10 * " " + "\n" + "  Петя  " + "\n" + 18 * " " + "Вася  ")
+print("   II      I      III")

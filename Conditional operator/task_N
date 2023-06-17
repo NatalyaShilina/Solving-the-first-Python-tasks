@@ -1,0 +1,6 @@
+number = input()
+sort = sorted(number)
+if sort[0] != "0":
+    print(sort[0] + sort[1], sort[2] + sort[1])
+else:
+    print(sort[1] + sort[0], sort[2] + sort[1])

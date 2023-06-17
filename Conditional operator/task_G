@@ -1,0 +1,6 @@
+number = str(input())
+revers_number = ''.join(reversed(list(number)))
+if number == revers_number:
+    print("YES")
+else:
+    print("NO")

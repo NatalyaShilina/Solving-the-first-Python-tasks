@@ -1,0 +1,5 @@
+number = int(input())
+chislo3 = number % 10
+chislo1 = number // 100
+chislo2 = number // 10 % 10
+print(str(chislo2 + chislo3) + str(chislo1 + chislo2))

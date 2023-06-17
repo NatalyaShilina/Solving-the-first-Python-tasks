@@ -1,0 +1,25 @@
+a = float(input())
+b = float(input())
+c = float(input())
+discriminant = b ** 2 - 4 * a * c
+if a != 0:
+    if discriminant < 0:
+        print("No solution")
+    elif discriminant > 0:
+        x1 = (- b + discriminant ** 0.5) / (2 * a)
+        x2 = (- b - discriminant ** 0.5) / (2 * a)
+        if x1 == x2:
+            print(f'{x1:.2f}')
+        elif x1 != x2:
+            first = min(x1, x2)
+            second = max(x1, x2)
+            print(f'{first:.2f}', f'{second:.2f}')
+    elif discriminant == 0:
+        x = (- b) / (2 * a)
+        print(f'{x:.2f}')
+elif b != 0:
+    print(round(-1 * c / b, 2))
+elif c != 0:
+    print("No solution")     
+else:
+    print("Infinite solutions")

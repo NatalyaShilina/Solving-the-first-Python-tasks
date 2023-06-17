@@ -1,0 +1,6 @@
+k = 0
+number = str(input())
+numbers = [int(i) for i in number]
+for i in numbers:
+    k += i
+print(k)

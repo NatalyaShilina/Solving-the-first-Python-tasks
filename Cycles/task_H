@@ -1,0 +1,5 @@
+fraza = input()
+kolvo = int(input())
+
+for i in range(kolvo):
+    print(fraza)

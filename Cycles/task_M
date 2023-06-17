@@ -1,0 +1,5 @@
+number = int(input())
+min_i = input()
+for i in range(number - 1):
+    min_i = min(min_i, input())
+print(min_i)

@@ -1,0 +1,14 @@
+a = int(input())
+b = int(input())
+astar = str(a)
+bstar = str(b)
+
+while a != b:
+    if a > b:
+        a = a - b
+    else:
+        b = b - a
+nod = a  
+
+nok = int((int(astar) * int(bstar)) / nod)
+print(nok)

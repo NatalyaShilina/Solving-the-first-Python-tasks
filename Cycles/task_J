@@ -1,0 +1,16 @@
+napravlenie = input()
+x = 0
+y = 0
+while napravlenie != "СТОП":
+    shagov = int(input())
+    if napravlenie == "СЕВЕР":
+        x += shagov
+    elif napravlenie == "ВОСТОК":
+        y += shagov
+    elif napravlenie == "ЮГ":
+        x -= shagov
+    elif napravlenie == "ЗАПАД":
+        y -= shagov
+    napravlenie = input()
+print(x)
+print(y)

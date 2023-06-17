@@ -1,0 +1,13 @@
+number = int(input())
+count = 1
+sqrt = round(number ** 0.5)
+
+for i in range(2, sqrt):
+    if number % i == 0:
+        print("NO")
+        break
+else:
+    if number != 1:
+        print("YES")
+    else:
+        print("NO")

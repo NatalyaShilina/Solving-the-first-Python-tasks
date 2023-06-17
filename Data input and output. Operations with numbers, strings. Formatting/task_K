@@ -1,0 +1,6 @@
+number = int(input("введите четырехзначное число "))
+chislo1 = str(number // 1000)
+chislo2 = str(number // 100 % 10)
+chislo3 = str(number // 10 % 10)
+chislo4 = str(number % 10)
+print(str(chislo2 + chislo1 + chislo4 + chislo3))

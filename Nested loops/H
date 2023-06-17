@@ -1,0 +1,12 @@
+n = int(input())
+max_number = 0
+for i in range(1, n + 1):
+    name = input()
+    number = int(input())
+    summ = 0
+    for d in str(number):
+        summ += int(d)
+    if summ >= max_number:
+        max_number = summ
+        max_name = name
+print(max_name)

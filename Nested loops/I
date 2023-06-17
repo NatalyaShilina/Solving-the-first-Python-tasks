@@ -1,0 +1,7 @@
+number = int(input())
+k = ""
+for i in range(number):
+    digits = str(input())
+    max_digit = max(digits)
+    k += max_digit
+print(k)

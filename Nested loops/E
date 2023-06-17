@@ -1,0 +1,11 @@
+n = int(input())
+count = 0
+for i in range(n):
+    a = input()
+    k = i
+    while a != 'ВСЁ':
+        if a == 'зайка' and k == i:
+            count += 1
+            k = 0
+            a = input()
+print(count)

@@ -1,0 +1,10 @@
+n = int(input())
+k = int(input())
+for i in range(n - 1):
+    j = int(input())
+    while k != j:
+        if j > k:
+            j = j - k
+        else: 
+            k = k - j
+print(k)

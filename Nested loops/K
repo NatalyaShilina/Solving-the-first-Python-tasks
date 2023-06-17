@@ -1,0 +1,12 @@
+n = int(input())
+k = 0
+count = 0
+for i in range(n):
+    number = int(input())
+    if number > 1:
+        for j in range(2, number // 2 + 1):
+            if number % j == 0:
+                break
+        else:
+            count += 1
+print(count)

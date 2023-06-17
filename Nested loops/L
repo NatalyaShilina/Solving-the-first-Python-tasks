@@ -1,0 +1,4 @@
+height = str(input())
+width = str(input())
+size = height * width
+print(size)

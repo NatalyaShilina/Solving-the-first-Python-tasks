@@ -1,0 +1,11 @@
+def modify_list(l):
+    mylist = []
+    for k in range(0, len(l)):
+        if l[k] % 2 == 0:
+            mylist.append(int(l[k] / 2))
+    del l[:]
+    l.extend(mylist)
+        
+lst = [10, 5, 8, 3]
+modify_list(lst)
+print(lst)

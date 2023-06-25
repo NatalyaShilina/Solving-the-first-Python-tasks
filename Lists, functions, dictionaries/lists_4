@@ -1,0 +1,8 @@
+lst = [int(i) for i in input().split()]
+a = int(input())
+if a in lst:
+    for k in range(0, len(lst)-1):
+        if lst[k] == lst.index(a):
+            print(k)
+else:
+    print('Отсутствует')

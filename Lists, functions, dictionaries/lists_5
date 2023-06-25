@@ -1,0 +1,2 @@
+s1=list(input())
+print(s1)

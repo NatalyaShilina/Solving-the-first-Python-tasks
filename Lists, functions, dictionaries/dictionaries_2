@@ -1,0 +1,14 @@
+s = input()
+st = s.lower()
+d = dict()
+value = 0
+
+for i in st:
+    key = i
+    if key in d:
+        continue
+    else:
+        value = [st.count(i) for i in st]
+        d.update({key : [value]})
+        
+print(key, value, sep=' ', end= '\n')

@@ -1,0 +1,11 @@
+n = int(input())
+a = [input() for i in range(n)]
+new_a = [x.lower() for x in a]
+
+n2 = int(input())
+l1 = []
+for i in range(n2):
+    l1 += input().lower().split()
+for j in l1:
+    if j not in new_a:
+        print(j)

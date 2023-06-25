@@ -1,0 +1,20 @@
+def f(x):
+    if x <= -2:
+        y = 1 - (x+2)**2
+    elif x > -2 and x <= 2:
+        y = -(x/2)
+    elif x > 2:
+        y = (x-2)**2 + 1
+    return(y)
+
+dc={}
+n=int(input())
+
+
+for i in range(n):
+    x=int(input())
+    if x in dc:
+        print(dc[x])
+    else:
+        dc[x]=f(x)
+        print(dc[x])
